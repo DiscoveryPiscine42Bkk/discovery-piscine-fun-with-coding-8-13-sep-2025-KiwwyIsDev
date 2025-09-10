@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card {
+    background: rgba(255,255,255,0.95);
+    padding: 32px 24px 24px 24px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    width: 340px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+
+.card-title {
+    margin-bottom: 18px;
+    font-size: 28px;
+    color: #2a3a5e;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.profile-pic {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+    border: 3px solid #e0eafc;
+    margin-bottom: 10px;
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.profile-table td {
+    border: none;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.login {
+    font-weight: 600;
+    font-size: 19px;
+    color: #2a3a5e;
+    letter-spacing: 0.5px;
+}
+
+.description {
+    color: #4a6fa5;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.socials {
+    padding: 8px 0;
+}
+
+.socials a {
+    text-decoration: none;
+    margin: 0 7px;
+    display: inline-block;
+}
+
+.socials img {
+    width: 28px;
+    margin: 0 7px;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: transform 0.2s, opacity 0.2s;
+    vertical-align: middle;
+}
+
+.socials img:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.contact-btn {
+    background: linear-gradient(90deg, #007BFF 0%, #4a6fa5 100%);
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    margin-top: 10px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(90deg, #0056b3 0%, #2a3a5e 100%);
+    box-shadow: 0 4px 16px rgba(44,62,80,0.12);
+}

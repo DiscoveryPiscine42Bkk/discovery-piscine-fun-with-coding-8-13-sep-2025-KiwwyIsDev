@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile Card</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <div class="card">
+        <h1 class="card-title">My Profile</h1>
+        <table class="profile-table">
+            <tr>
+                <td>
+                    <img src="https://avatars.githubusercontent.com/u/68836066?v=4" alt="Profile Picture" class="profile-pic">
+                </td>
+            </tr>
+            <tr>
+                <td class="login">thbunsin</td>
+            </tr>
+            <tr>
+                <td class="description">Nothing here.</td>
+            </tr>
+            <tr>
+                <td class="socials">
+                    <a href="https://github.com/KiwwyIsDev" title="GitHub"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="contact-btn" onclick="redirect()">Contact</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function redirect() {
+            window.location.href = "https://github.com/KiwwyIsDev";
+        }
+
+    </script>
+</body>
+</html>

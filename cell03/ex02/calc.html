@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>It’s over 9000</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input,
+        select,
+        button {
+            padding: 8px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Basic Calculator</h1>
+    <input type="text" id="left" placeholder="Left number">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="text" id="right" placeholder="Right number">
+    <button id="tryMe">Try me!</button>
+
+    <script>
+        setInterval(() => {
+            alert('Please, use me...');
+        }, 30000);
+
+        document.getElementById('tryMe').addEventListener('click', () => {
+            const leftVal = document.getElementById('left').value.trim();
+            const rightVal = document.getElementById('right').value.trim();
+            const op = document.getElementById('operator').value;
+
+            const left = parseInt(leftVal, 10);
+            const right = parseInt(rightVal, 10);
+
+            if (
+                !Number.isInteger(left) || !Number.isInteger(right) ||
+                left < 0 || right < 0
+            ) {
+                alert('Error :(');
+                return;
+            }
+
+
+            if ((op === '/' || op === '%') && right === 0) {
+                console.log("It's over 9000!");
+                alert("It's over 9000!");
+                return;
+            }
+
+            let result;
+            switch (op) {
+                case '+': result = left + right; break;
+                case '-': result = left - right; break;
+                case '*': result = left * right; break;
+                case '/': result = left / right; break;
+                case '%': result = left % right; break;
+            }
+
+            console.log(result);
+            alert(result);
+        });
+    </script>
+</body>
+
+</html>
