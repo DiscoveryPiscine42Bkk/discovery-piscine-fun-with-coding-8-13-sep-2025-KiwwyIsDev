@@ -89,7 +89,7 @@ nav {
   padding-top: 20vh;
   padding-right: 10vw;
   padding-left: 10vw;
-  background-image: url(../IMGs/ST-BG.jpeg);
+  background-image: url(ST-BG.jpeg);
   min-height: 100px;
   background-attachment: fixed;
   background-position: center;
@@ -192,7 +192,7 @@ nav {
   padding-top: 25vh;
   padding-right: 10vw;
   padding-left: 10vw;
-  background-image: url(../IMGs/ND-BG.jpeg);
+  background-image: url(ND-BG.jpeg);
   min-height: 100px;
   background-attachment: fixed;
   background-position: center;
@@ -251,7 +251,7 @@ a {
 #rd-section {
   height: 90vh;
   padding: 25vh 30vw;
-  background-image: url(../IMGs/RD_BG.jpg);
+  background-image: url(RD_BG.jpg);
   min-height: 100px;
   background-attachment: fixed;
   background-position: center;
